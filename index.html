@@ -1,59 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>iFixit Repairability Dashboard</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Find which devices are the most and least repairable, according to iFixit">
-<link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="static/styles.css" rel="stylesheet" media="screen">
-<link rel="manifest" href="static/site.webmanifest">
-<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
 
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.yeetpc.com/matomo/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '2']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
+<head>
+    <title>Ravi Shah's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Ravi Shah's software and hardware projects, qualifications, interests, and more!">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="static/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "//analytics.yeetpc.com/matomo/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '3']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
 
 </head>
+
 <body>
-<div class="header">
-<a href="#" class="text">iFixit Repairability Dashboard</a>
-</div>
-<div class="row">
-<div class="column2" style="background-color:#040e1e; overflow: auto; scrollbar-width: thin; width: 100%;">
-<p style="text-align:center; font-size: 25px;">Welcome to the iFixit Repairability Dashboard! Here you can find the repairability scores of many devices that iFixit has analyzed. Click a score below to get started!</p>
-<div class="centered">
-<div style="display:block; align-items:center; justify-content:center;"><a href="/one" class="button1 buttonall">1/10</a><a href="/two" class="button2 buttonall">2/10</a><a href="/three" class="button3 buttonall">3/10</a><a href="/four" class="button4 buttonall">4/10</a><a href="/five" class="button5 buttonall">5/10</a><a href="/six" class="button6 buttonall">6/10</a><a href="/seven" class="button7 buttonall">7/10</a><a href="/eight" class="button8 buttonall">8/10</a><a href="/nine" class="button9 buttonall">9/10</a><a href="/ten" class="button10 buttonall">10/10</a></div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="column2" style="background-color:#081c3d; overflow: auto; scrollbar-width: thin;">
-<h2 style="font-size: 25px;" class="centered">Ever wondered which devices are the hardest to repair? Find the laptops, tablets, and smartphones which have the worst iFixit Repairability Scores.</h2>
-<div class="centered">
-<a href="/worst-offenders" class="buttonhardest buttonall">Worst Offenders</a>
-</div>
-</div>
-<div class="column2" style="background-color:#06152e; overflow: auto; scrollbar-width: thin;">
-<h2 style="font-size: 25px;" class="centered">Want to find a device which is absolute repair bliss? Find the laptops, tablets, and smartphones which have the best iFixit Repairability Scores.</h2>
-<div class="centered">
-<a href="/most-repairable" class="buttonbest buttonall">Most Repairable Devices</a>
-</div>
-</div>
-</div>
-<div class="header" style="padding: 25px 10px;">
-<p style="text-align:center;">Made with &#10084;&#65039; by <a class="none" href="https://www.yeetpc.com/about.html" target="_blank" rel="noopener">Ravi Shah</a></p>
-</div>
+    <!-- Top Navbar -->
+    <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand">
+            <h1><a href="#">Ravi Shah's Portfolio</a></h1>
+        </div>
+        <div class="Navbar__Link Navbar__Link-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="Navbar__Items Navbar__Items--right">
+            <div class="Navbar__Link">
+                <a href="/projects.html">Projects</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="/about.html">About</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="https://www.yeetpc.com/blog">Blog</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="mailto:ravi@yeetpc.com">Contact Me</a>
+            </div>
+        </nav>
+    </div>
+    <!-- End Top Navbar -->
+
+    <!-- Begin Top Banner -->
+    <div class="banner">
+        <div class="card-top-banner">
+            <p class="top-banner-text">HI 👋 I'M RAVI SHAH!</p>
+            <p class="top-banner-text-smaller">
+                I'm currently a freshman at
+                <a href="https://westwood.roundrockisd.org/">Westwood High School</a>. Some of my projects include <a href="https://github.com/Rav4s/New-Pi-Garage-Door-Opener">a Raspberry Pi smart garage door controller</a>, <a href="https://www.yeetpc.com">a fully self-hosted website</a>,
+                <a href="https://www.yeetpc.com/blog/entry.php">my ThinkPad X220 Tablet build</a>, and
+                <a href="https://repairability.yeetpc.com">an iFixit repairability score dashboard</a>. I'm always looking for new projects to work on and contribute to. You can find me on <a href="https://www.reddit.com/user/rav4s">Reddit</a>, <a href="https://github.com/rav4s">GitHub</a>,
+                and on my <a href="https://www.youtube.com/channel/UC3T95a3-KMIcSLYbDhdKiTA/featured">YouTube channel</a>.
+            </p>
+        </div>
+    </div>
+    <!-- End Top Banner -->
+
+    <!-- Begin Responsive Layout -->
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <p>Helo</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <p>Helo</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <p>Helo</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Responsive Layout -->
+
+    <script src="js/expandnavbar.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #040e1e;
+}
+
+h1 {
+    all: initial;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-right: 8px;
+    font-size: 23.5px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #FF8B00;
+}
+
+.Navbar {
+    background-color: #005380;
+    display: flex;
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.Navbar__Link {
+    padding-right: 8px;
+    font-size: 18.5px;
+}
+
+.Navbar__Link-brand {
+    padding-right: 8px;
+    font-size: 18.5px;
+}
+
+.Navbar__Link a,
+h1 {
+    color: white;
+}
+
+.Navbar__Link a:link {
+    text-decoration: none;
+}
+
+.Navbar__Link a:visited {
+    text-decoration: none;
+}
+
+.Navbar__Link a:hover {
+    text-decoration: underline;
+}
+
+.Navbar__Link a:active {
+    text-decoration: underline;
+}
+
+.Navbar__Items {
+    display: flex;
+}
+
+.Navbar__Items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    width: calc(100% / 3);
+    padding: 10px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5%;
+    background-color: #005380;
+    box-shadow: 2.5px 5px #FF8B00;
+}
+
+.card:hover {
+    box-shadow: 5px 10px #FF8B00;
+    transition: box-shadow 0.25s ease-in-out;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -o-transition: box-shadow 0.25s ease-in-out;
+    -moz-transition: box-shadow 0.25s ease-in-out;
+}
+
+.card-top-banner {
+    height: 100%;
+    width: 100%;
+}
+
+.top-banner-text {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding: 0;
+    margin-bottom: 0.3em;
+}
+
+.top-banner-text-smaller {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0 0;
+}
+
+@media only screen and (max-width: 850px) {
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+    .Navbar__Items {
+        display: none;
+    }
+    .Navbar__Items--right {
+        margin-left: 0;
+    }
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+    .column {
+        width: 100%;
+    }
+}
