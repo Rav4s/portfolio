@@ -39,79 +39,127 @@
 </head>
 
 <body>
-    <!-- Top Navbar -->
-    <div class="Navbar">
-        <div class="Navbar__Link Navbar__Link-brand">
-            <h1><a href="#">Ravi Shah's Portfolio</a></h1>
-        </div>
-        <div class="Navbar__Link Navbar__Link-toggle">
-            <i class="fa fa-bars"></i>
-        </div>
-        <nav class="Navbar__Items Navbar__Items--right">
-            <div class="Navbar__Link">
-                <a href="/projects">Projects</a>
+    <div class="page-container">
+        <div class="content-wrap">
+            <!-- Top Navbar -->
+            <div class="Navbar">
+                <div class="Navbar__Link Navbar__Link-brand">
+                    <h1><a href="#">Ravi Shah's Portfolio</a></h1>
+                </div>
+                <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <nav class="Navbar__Items Navbar__Items--right">
+                    <div class="Navbar__Link">
+                        <a href="/projects">Projects</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="https://www.yeetpc.com/blog">Blog</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="/gallery.html">Gallery</a>
+                    </div>
+                    <div class="Navbar__Link">
+                        <a href="mailto:ravi@yeetpc.com">Contact Me</a>
+                    </div>
+                </nav>
             </div>
-            <div class="Navbar__Link">
-                <a href="https://www.yeetpc.com/blog">Blog</a>
-            </div>
-            <div class="Navbar__Link">
-                <a href="/gallery.html">Gallery</a>
-            </div>
-            <div class="Navbar__Link">
-                <a href="mailto:ravi@yeetpc.com">Contact Me</a>
-            </div>
-        </nav>
-    </div>
-    <!-- End Top Navbar -->
+            <!-- End Top Navbar -->
 
-    <!-- Begin Top Banner -->
-    <div class="banner">
-        <div class="card-top-banner">
-            <p class="top-banner-text">HI 👋 I'M RAVI SHAH!</p>
-            <p class="top-banner-text-smaller">
-                I'm currently a freshman at
-                <a href="https://westwood.roundrockisd.org/">Westwood High School</a>. Some of my projects include <a href="https://github.com/Rav4s/New-Pi-Garage-Door-Opener">a Raspberry Pi smart garage door controller</a>, <a href="https://www.yeetpc.com">a fully self-hosted website</a>,
-                <a href="https://www.yeetpc.com/blog/entry.php">my ThinkPad X220 Tablet build</a>, and
-                <a href="https://repairability.yeetpc.com">an iFixit repairability score dashboard</a>. I'm always looking for new projects to work on and contribute to. You can find me on <a href="https://www.reddit.com/user/rav4s">Reddit</a>, <a href="https://github.com/rav4s">GitHub</a>,
-                and on my <a href="https://www.youtube.com/channel/UC3T95a3-KMIcSLYbDhdKiTA/featured">YouTube channel</a>.
-            </p>
-            <br />
-            <p class="top-banner-text-medium">Popular Projects</p>
-        </div>
-    </div>
-    <!-- End Top Banner -->
+            <!-- Begin Top Banner -->
+            <div class="banner">
+                <div class="card-top-banner">
+                    <p class="top-banner-text">HI 👋 I'M RAVI SHAH!</p>
+                    <p class="top-banner-text-smaller">
+                        I'm currently a freshman at
+                        <a href="https://westwood.roundrockisd.org/">Westwood High School</a>. Some of my projects include <a href="https://github.com/Rav4s/New-Pi-Garage-Door-Opener">a Raspberry Pi smart garage door controller</a>, <a href="https://www.yeetpc.com">a fully self-hosted website</a>,
+                        <a href="https://www.yeetpc.com/blog/entry.php">my ThinkPad X220 Tablet build</a>, and
+                        <a href="https://repairability.yeetpc.com">an iFixit repairability score dashboard</a>. I'm always looking for new projects to work on and contribute to. You can find me on <a href="https://www.reddit.com/user/rav4s">Reddit</a>,
+                        <a href="https://github.com/rav4s">GitHub</a>, and on my <a href="https://www.youtube.com/channel/UC3T95a3-KMIcSLYbDhdKiTA/featured">YouTube channel</a>.
+                    </p>
+                    <br />
+                    <p class="top-banner-text-medium">Popular Projects</p>
+                </div>
+            </div>
+            <!-- End Top Banner -->
 
-    <!-- Begin Responsive Layout -->
-    <div class="row">
-        <div class="column">
-            <br />
-            <div id="smartgaragedoor" class="card">
-                <div class="card-header">
-                    Smart Garage Door Controller
+            <!-- Begin Responsive Layout -->
+            <div class="row">
+                <div class="column">
+                    <br />
+                    <div id="smartgaragedoor" class="card">
+                        <div class="card-header">
+                            Smart Garage Door Controller
+                        </div>
+                        <div class="card-image-box">
+                            <img src="static/img/projects/smart-garage-door-thumbnail.jpeg" alt="Smart Garage Door Opener Thumbnail" class="card-image" />
+                        </div>
+                        <div class="card-icon-container">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://youtu.be/An7KQbmUnhs"><img src='static/img/common/YouTube.svg' alt="View the Smart Garage Door Build Video on YouTube" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Rav4s/New-Pi-Garage-Door-Opener"><img src='static/img/common/Github.svg' alt="View the Smart Garage Door Github" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-image-box">
-                    <img src="static/img/projects/smart-garage-door-thumbnail.jpeg" alt="Smart Garage Door Opener Thumbnail" class="card-image" />
+                <div class="column">
+                    <br />
+                    <div id="repairdashboard" class="card">
+                        <div class="card-header">
+                            Repairability Score Dashboard
+                        </div>
+                        <div class="card-image-box">
+                            <img src="static/img/projects/repairability-score-dashboard-thumbnail.png" alt="Repairability Score Dashboard Thumbnail" class="card-image" />
+                        </div>
+                        <div class="card-icon-container">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://repairability.yeetpc.com"><img src='static/img/common/Internet.png' alt="View the live iFixit Repairability Score Dashboard" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Rav4s/iFixit-Repairability-Dashboard"><img src='static/img/common/Github.svg' alt="View the Repairability Score Dashboard Github" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <br />
+                    <div id="thinkpadx220" class="card">
+                        <div class="card-header">
+                            Thinkpad X220 Tablet Upgrades
+                        </div>
+                        <div class="card-image-box">
+                            <img src="static/img/projects/thinkpad-x220-tablet-upgrades-thumbnail.jpg" alt="Thinkpad X220 Tablet Upgrades Thumbnail" class="card-image" />
+                        </div>
+                        <div class="card-icon-container">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://www.yeetpc.com/blog/entry.php"><img src='static/img/common/Internet.png' alt="View the Thinkpad X220 Tablet Upgrades Blog Post" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <br />
-            <div id="repairdashboard" class="card">
-                <div class="card-header">
-                    Repairability Score Dashboard
+            <!-- End Responsive Layout -->
+
+            <!-- Begin Footer -->
+
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="https://www.vecteezy.com/free-vector/social-media-icons">Icon Vectors by Vecteezy</a>
+                    <p>© 2021 Ravi Shah</p>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <br />
-            <div id="thinkpadx220" class="card">
-                <div class="card-header">
-                    Thinkpad X220 Tablet Upgrades
-                </div>
-            </div>
+
+            <!-- End Footer -->
         </div>
     </div>
-    <!-- End Responsive Layout -->
 
     <script src="js/redirects.js"></script>
     <script src="js/expandnavbar.js" defer></script>

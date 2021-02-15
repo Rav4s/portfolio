@@ -1,11 +1,11 @@
 document.getElementById("smartgaragedoor").onclick = function() {
-    location.href = "/projects/smart-garage-door-controller.html";
+    location.href = "https://github.com/Rav4s/New-Pi-Garage-Door-Opener";
 };
 
 document.getElementById("repairdashboard").onclick = function() {
-    location.href = "/projects/iFixit-Repairability-Dashboard.html";
+    location.href = "https://repairability.yeetpc.com/";
 };
 
 document.getElementById("thinkpadx220").onclick = function() {
-    location.href = "/projects/thinkpad-x220-tablet-build.html";
+    location.href = "https://www.yeetpc.com/blog/entry.php";
 };

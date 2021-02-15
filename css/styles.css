@@ -36,6 +36,15 @@ a:hover {
     color: #FF8B00;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 8.5rem;
+}
+
 .Navbar {
     background-color: #005380;
     display: flex;
@@ -152,7 +161,7 @@ h1 {
     font-size: 2em;
     padding: 0;
     margin-bottom: 0em;
-    margin-top: 0.5em;
+    margin-top: 0em;
 }
 
 .top-banner-text-smaller {
@@ -180,6 +189,7 @@ h1 {
     height: 50%;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .card-image {
@@ -190,12 +200,70 @@ h1 {
 }
 
 .card-icon-container {
+    padding-top: 22.5px;
     display: flex;
     width: 100%;
     height: fit-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 1100px) {
+.social-icons {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-flex;
+    list-style-type: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #005380;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.footer-links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    line-height: 1em;
+}
+
+.footer a {
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+.footer p {
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 1200px) {
     .Navbar__Items,
     .Navbar {
         flex-direction: column;
@@ -217,5 +285,11 @@ h1 {
     }
     .column {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .card-icon-container {
+        padding-top: 10px;
     }
 }
